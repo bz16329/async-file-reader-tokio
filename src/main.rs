@@ -1,6 +1,7 @@
 use tokio::fs::File;
 use tokio::io::AsyncReadExt;
 
+// Main function
 #[tokio::main]
 async fn main() {
     let file_contents = read_file_contents("README.md").await;
@@ -10,6 +11,7 @@ async fn main() {
     }
 }
 
+// Function to read file contents asynchronously
 async fn read_file_contents(file_path: &str) -> Result<String, std::io::Error> {
     let mut file = File::open(file_path).await?;
     let mut contents = String::new();
