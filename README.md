@@ -17,15 +17,21 @@ The AsyncFileReader project is a Rust application that demonstrates asynchronous
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/marcusn1127/async-file-reader.git
+```
 
 2. Change into the project directory:
 
+```bash
 cd async-file-reader
+```
 
 3. Build and run the project:
 
+```bash
 cargo run --release
+```
 
 4. Follow the on-screen instructions to provide the path to the file you want to read asynchronously.
 
